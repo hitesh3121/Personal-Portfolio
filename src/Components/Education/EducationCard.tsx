@@ -20,7 +20,7 @@ export default function EducationCard({}: Props) {
         <ul className="list-disc space-y-2 ml-5 text-sm">
           <li>
             Graduated with honors from the prestigious Gujarat Technological
-            University with a Bachelor's degree in Information Technology.
+            University with a Bachelor&apos;s degree in Information Technology.
           </li>
           <li>
             Developed a strong foundation in computer science principles,

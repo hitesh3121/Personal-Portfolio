@@ -44,8 +44,8 @@ export default function About({}: Props) {
           <span className="decoration-blue-300/100">Introduction</span>
         </h4>
         <p className="py-0 my-0">
-          Hello and welcome! I'm thrilled to have you here. My name is Hitesh
-          Zala, and I'm a passionate software developer dedicated to crafting
+          Hello and welcome! I&apos;m thrilled to have you here. My name is Hitesh
+          Zala, and I&apos;m a passionate software developer dedicated to crafting
           innovative solutions and creating seamless user experiences. This
           portfolio is a reflection of my dedication, showcasing a selection of
           my projects, experiences, and achievements. I invite you to explore my
@@ -53,11 +53,6 @@ export default function About({}: Props) {
           craftsmanship that goes into each endeavor. Thank you for visiting,
           and I look forward to connecting with you to discuss how we can
           collaborate and bring your ideas to fruition.
-          {/* Greetings! I am a
-          experienced Backend Developer with over 2 years of working experience
-          specializing in Node.js, React.js and Python. I have a proven track
-          record of delivering high quality web applications and solutions to
-          clients successfully. */}
         </p>
       </div>
     </motion.div>
