@@ -1,20 +1,25 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {EnvelopeIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/solid";
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
-    name: string,
-    email: string,
-    subject: string,
-    message: string,
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
 };
 
 type Props = {};
 
 export default function ContactMe({}: Props) {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     window.location.href = `mailto:zalahitesh960@gmail.com?subject=${encodeURIComponent(
       data.subject
@@ -70,29 +75,39 @@ export default function ContactMe({}: Props) {
         >
           <div className="sm:flex-row sm:space-x-2 flex-col space-y-2 sm:space-y-0">
             <input
-              {...register("name")}
+              {...register("name", { required: true })}
               placeholder="Name"
               type="text"
               className="contact-input w-full sm:w-fit"
             />
+            {errors.name && (
+              <span className="text-red-500">Name is required</span>
+            )}
             <input
-              {...register("email")}
+              {...register("email", { required: true })}
               placeholder="Email"
               type="email"
               className="contact-input w-full sm:w-fit"
             />
+            {errors.email && (
+              <span className="text-red-500">Email is required</span>
+            )}
           </div>
           <input
-            {...register("subject")}
+            {...register("subject", { required: true })}
             placeholder="Subject"
             type="text"
             className="contact-input"
           />
+          {errors.subject && (
+            <span className="text-red-500">Subject is required</span>
+          )}
           <textarea
-            {...register("message")}
+            {...register("message", { required: false })}
             placeholder="Message"
             className="contact-input mb-6"
           />
+
           <button
             type="submit"
             className="bg-blue-300/70 text-black py-2.5 px-10 text-lg rounded-md"
