@@ -44,7 +44,7 @@ export default function ContactMe({}: Props) {
 
       <div className="flex flex-col space-y-10 mt-16 items-center">
         <h4 className="hidden sm:inline text-1xl md:text-2xl text-center">
-          <span className="decoration-blue-300/100">Let's Connect</span>
+          <span className="decoration-blue-300/100">Let&apos;s Connect</span>
         </h4>
 
         <div className="space-y-3">
