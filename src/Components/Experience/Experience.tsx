@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import FluxbyteTechnologiesCard, { PraxwareTechnologiesCard } from "@/Components/Experience/ExperienceCard";
+import FluxbyteTechnologiesCard, {
+  PraxwareTechnologiesCard,
+} from "@/Components/Experience/ExperienceCard";
 
 type Props = {};
 
@@ -22,7 +24,7 @@ export default function Experience({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-1xl">
         Experience
       </h3>
-      <div className="w-full flex space-x-5 snap-x snap-mandatory mt-20 overflow-x-auto scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-300/80 justify-center">
+      <div className="w-full sm:flex space-x-5 snap-x snap-mandatory mt-20 overflow-x-auto scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-300/80 sm:justify-center flex justify-start">
         <FluxbyteTechnologiesCard />
         <PraxwareTechnologiesCard />
       </div>

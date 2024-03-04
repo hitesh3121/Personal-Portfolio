@@ -5,7 +5,7 @@ type Props = {};
 
 export default function EducationCard({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[350px] xl:w-[400px] snap-center bg-[#292929] my-6 p-10 hover:opacity-100 opacity-80 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[350px] xl:w-[400px] snap-center bg-[#292929] p-3 sm:p-10 hover:opacity-100 opacity-80 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <div>
         <div className="flex space-x-2 my-2 items-center gap-1">
           <img
