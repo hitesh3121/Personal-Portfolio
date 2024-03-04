@@ -22,7 +22,7 @@ export default function Projects({}: Props) {
         "https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg",
       description:
         "Developed a feature-rich e-commerce platform using Django, incorporating user authentication, product catalog, and a seamless shopping cart experience.\n " +
-        "Emphasized efficient database modeling, backend logic, and secure payment processing Developed the payroll management system \n",
+        "Emphasized efficient database modeling, backend logic, and Developed the payroll management system \n",
     },
     {
       key: 3,
@@ -31,7 +31,6 @@ export default function Projects({}: Props) {
         "https://t4.ftcdn.net/jpg/04/06/92/45/360_F_406924594_patrhQjU7byFasNnc8499EH7lzG48Hln.jpg",
       description:
         "Engineered a robust Distributor Management System using Node.js \n" +
-        "focusing on real-time data processing inventory management, and order tracking. \n" +
         "Leveraged Node.js for scalable backend operations, efficient API development \n" +
         "and seamless integration with databases. Ensured a responsive and user-friendly interface for streamlined distributor operations \n",
     },
